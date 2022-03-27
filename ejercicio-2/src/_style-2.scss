@@ -1,0 +1,39 @@
+$base-color:lightblue;
+
+.box {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+  }
+  
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 150px;
+  }
+  
+  .base-color {
+    background-color: $base-color;
+  }
+  
+  .darken {
+    background-color: darken($base-color, 15%);
+  }
+  
+  .lighten {
+    background-color: lighten($base-color, 15%);
+  }
+  
+  .principal-font {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .secondary-font {
+    font-family: monospace;
+  }
+  
+  .shadow {
+    box-shadow: -10px 20px 30px red;
+  }

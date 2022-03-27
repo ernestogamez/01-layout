@@ -1,0 +1,33 @@
+.box {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 6px;;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+$base-color: palevioletred;
+$font-color: midnightblue;
+
+.base-color {
+  background-color: $base-color;
+  color: $font-color;
+}
+
+@for $i from 4 to 0 {
+  .darken-#{$i} {
+    background-color: darken($base-color, 5%*$i);
+    color: lighten($font-color, 20%*$i);
+  }
+}
+
+@for $i from 1 to 5 {
+  .lighten-#{$i} {
+    background-color: lighten($base-color, 5%*$i);
+    color: darken($font-color, 20%*$i);
+  }
+}
+
