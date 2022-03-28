@@ -3,9 +3,9 @@ $color: sandybrown;
 
 .my-card-grid {
     background-color: ghostwhite;
-    display: grid;
+    display: inline-grid;
     border: 1px black solid;
-    grid-template-columns: 350px;
+    grid-template-columns: 400px;
     grid-template-rows: auto auto auto auto auto;
 }
 
