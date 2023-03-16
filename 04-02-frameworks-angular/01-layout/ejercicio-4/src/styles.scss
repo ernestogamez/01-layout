@@ -1,0 +1,66 @@
+$fuente: Arial, Helvetica, sans-serif;
+$color: sandybrown;
+
+.my-card-grid {
+    background-color: ghostwhite;
+    display: inline-grid;
+    border: 1px black solid;
+    grid-template-columns: 400px;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.item {
+    padding: 10px;
+    font-family: $fuente;
+    font-size: 12px;
+}
+
+#foto {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 0;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+#titulo {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#texto {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#fecha {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: right;
+    font-size: 10px;
+
+    span {
+        color: $color;
+    }
+}
+
+#boton {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: $color;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($color, 20%);
+    }
+}
