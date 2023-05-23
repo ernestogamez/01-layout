@@ -59,7 +59,7 @@ const onFilter = (company: string) => {
 // SERVICE
 // Hacemos la llamada a nuestra composable
 // No hay que hacer import por el propio framework (al estar en la carpeta composables)
-// Esto es para la primera vez que se carga la página
+// Esto es para la primera vez que se carga la página (uso este servicio para practicar en lugar de llamar al filterStore.filterCompany)
 const { list } = await useMembersApi(filterStore.company);
 filterStore.list = list;
 </script>

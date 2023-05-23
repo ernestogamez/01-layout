@@ -29,7 +29,7 @@ export const useFilterStore = defineStore("filter", {
         // Seteamos el error para mostrarlo en pantalla
         this.error =
           "La organización introducida no ha devuelto datos. Prueba otra vez!";
-      }
+        }
     },
   },
 });
